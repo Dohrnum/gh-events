@@ -3,6 +3,10 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - master
+      - 'dev-*' #convered dev-1, dev-2, dev-this-is-new
+      - 'feat/**' #convered feat/new, feat/new/button
   workflow_dispatch:
   push:
     branches:
